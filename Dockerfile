@@ -11,7 +11,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY app ./app
 
-# SQLite WAL file and database live on a mounted volume.
+# SQLite database, original uploads and tile revisions live on a mounted volume.
 RUN mkdir -p /data
 VOLUME ["/data"]
 
